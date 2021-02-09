@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9941EBCF25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9941EBCE25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift */; };
 		996C1ACF25D1297E002B5822 /* LocalizedNumberFieldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1ACE25D1297E002B5822 /* LocalizedNumberFieldApp.swift */; };
 		996C1AD125D1297E002B5822 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1AD025D1297E002B5822 /* ContentView.swift */; };
 		996C1AD325D1297E002B5822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996C1AD225D1297E002B5822 /* Assets.xcassets */; };
 		996C1AD625D1297E002B5822 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996C1AD525D1297E002B5822 /* Preview Assets.xcassets */; };
-		996C1AE125D1297F002B5822 /* LocalizedNumberFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1AE025D1297F002B5822 /* LocalizedNumberFieldTests.swift */; };
 		996C1AEC25D1297F002B5822 /* LocalizedNumberFieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1AEB25D1297F002B5822 /* LocalizedNumberFieldUITests.swift */; };
+		996C1AFD25D129B2002B5822 /* NumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1AFC25D129B2002B5822 /* NumberTextField.swift */; };
+		996C1B0225D25349002B5822 /* LocalizedNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1B0125D25349002B5822 /* LocalizedNumberFormatter.swift */; };
+		996C1B0925D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1B0825D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift */; };
+		996C1B1125D25789002B5822 /* LocalizedNumberFormatterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1B1025D25789002B5822 /* LocalizedNumberFormatterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9941EBCE25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFormatterError.swift; sourceTree = "<group>"; };
 		996C1ACB25D1297E002B5822 /* LocalizedNumberField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizedNumberField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		996C1ACE25D1297E002B5822 /* LocalizedNumberFieldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFieldApp.swift; sourceTree = "<group>"; };
 		996C1AD025D1297E002B5822 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,11 +45,14 @@
 		996C1AD525D1297E002B5822 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		996C1AD725D1297E002B5822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		996C1ADC25D1297F002B5822 /* LocalizedNumberFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizedNumberFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		996C1AE025D1297F002B5822 /* LocalizedNumberFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFieldTests.swift; sourceTree = "<group>"; };
 		996C1AE225D1297F002B5822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		996C1AE725D1297F002B5822 /* LocalizedNumberFieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizedNumberFieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		996C1AEB25D1297F002B5822 /* LocalizedNumberFieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFieldUITests.swift; sourceTree = "<group>"; };
 		996C1AED25D1297F002B5822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		996C1AFC25D129B2002B5822 /* NumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTextField.swift; sourceTree = "<group>"; };
+		996C1B0125D25349002B5822 /* LocalizedNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFormatter.swift; sourceTree = "<group>"; };
+		996C1B0825D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFormatterDataSource.swift; sourceTree = "<group>"; };
+		996C1B1025D25789002B5822 /* LocalizedNumberFormatterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFormatterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9941EBCA25D25A8C00C60BAD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				996C1B0825D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift */,
+				996C1B0125D25349002B5822 /* LocalizedNumberFormatter.swift */,
+				9941EBCE25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		996C1AC225D1297E002B5822 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +115,8 @@
 			children = (
 				996C1ACE25D1297E002B5822 /* LocalizedNumberFieldApp.swift */,
 				996C1AD025D1297E002B5822 /* ContentView.swift */,
+				9941EBCA25D25A8C00C60BAD /* Helper */,
+				996C1B0625D25723002B5822 /* View */,
 				996C1AD225D1297E002B5822 /* Assets.xcassets */,
 				996C1AD725D1297E002B5822 /* Info.plist */,
 				996C1AD425D1297E002B5822 /* Preview Content */,
@@ -115,7 +135,7 @@
 		996C1ADF25D1297F002B5822 /* LocalizedNumberFieldTests */ = {
 			isa = PBXGroup;
 			children = (
-				996C1AE025D1297F002B5822 /* LocalizedNumberFieldTests.swift */,
+				996C1B1025D25789002B5822 /* LocalizedNumberFormatterTest.swift */,
 				996C1AE225D1297F002B5822 /* Info.plist */,
 			);
 			path = LocalizedNumberFieldTests;
@@ -128,6 +148,14 @@
 				996C1AED25D1297F002B5822 /* Info.plist */,
 			);
 			path = LocalizedNumberFieldUITests;
+			sourceTree = "<group>";
+		};
+		996C1B0625D25723002B5822 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				996C1AFC25D129B2002B5822 /* NumberTextField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +288,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				996C1AD125D1297E002B5822 /* ContentView.swift in Sources */,
+				996C1B0225D25349002B5822 /* LocalizedNumberFormatter.swift in Sources */,
 				996C1ACF25D1297E002B5822 /* LocalizedNumberFieldApp.swift in Sources */,
+				996C1AFD25D129B2002B5822 /* NumberTextField.swift in Sources */,
+				9941EBCF25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift in Sources */,
+				996C1B0925D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				996C1AE125D1297F002B5822 /* LocalizedNumberFieldTests.swift in Sources */,
+				996C1B1125D25789002B5822 /* LocalizedNumberFormatterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
