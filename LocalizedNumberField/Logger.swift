@@ -63,8 +63,12 @@ public class Logger : NSObject {
     private func format(logLevel: LogLevel, message: Any) -> String {
         return
             """
-            \(logLevel.headerMessage) - log place : \(_logPlace)
+
+            \(logLevel.headerMessage)
+            - log place : \(_logPlace)
+            - message
             \(message)
+            
             """
     }
 }
