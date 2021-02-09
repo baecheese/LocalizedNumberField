@@ -17,6 +17,7 @@
 		996C1B0225D25349002B5822 /* LocalizedNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1B0125D25349002B5822 /* LocalizedNumberFormatter.swift */; };
 		996C1B0925D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1B0825D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift */; };
 		996C1B1125D25789002B5822 /* LocalizedNumberFormatterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1B1025D25789002B5822 /* LocalizedNumberFormatterTest.swift */; };
+		999E37B425D26279007E66F5 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999E37B325D26279007E66F5 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		996C1B0125D25349002B5822 /* LocalizedNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFormatter.swift; sourceTree = "<group>"; };
 		996C1B0825D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFormatterDataSource.swift; sourceTree = "<group>"; };
 		996C1B1025D25789002B5822 /* LocalizedNumberFormatterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFormatterTest.swift; sourceTree = "<group>"; };
+		999E37B325D26279007E66F5 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				996C1ACE25D1297E002B5822 /* LocalizedNumberFieldApp.swift */,
 				996C1AD025D1297E002B5822 /* ContentView.swift */,
+				999E37B325D26279007E66F5 /* Logger.swift */,
 				9941EBCA25D25A8C00C60BAD /* Helper */,
 				996C1B0625D25723002B5822 /* View */,
 				996C1AD225D1297E002B5822 /* Assets.xcassets */,
@@ -291,6 +294,7 @@
 				996C1B0225D25349002B5822 /* LocalizedNumberFormatter.swift in Sources */,
 				996C1ACF25D1297E002B5822 /* LocalizedNumberFieldApp.swift in Sources */,
 				996C1AFD25D129B2002B5822 /* NumberTextField.swift in Sources */,
+				999E37B425D26279007E66F5 /* Logger.swift in Sources */,
 				9941EBCF25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift in Sources */,
 				996C1B0925D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift in Sources */,
 			);
