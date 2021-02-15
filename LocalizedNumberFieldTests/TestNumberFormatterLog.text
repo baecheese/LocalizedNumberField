@@ -1,0 +1,968 @@
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : en_US
+🧚🏻‍♀️ compare identifier : ur_IN
+
+* input number
+number_en_US : 123
+number_ur_IN : ۱۲۳
+
+* to number
+number_en_US : 123
+number_ur_IN : 123
+
+* to localized number string (en_US)
+number_en_US : 123
+number_ur_IN : 123
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : en_US
+🧚🏻‍♀️ compare identifier : ur_IN
+
+* input number
+number_en_US : 123.4
+number_ur_IN : ۱۲۳٫۴
+
+* to number
+number_en_US : 123.4
+number_ur_IN : nil
+
+* to localized number string (en_US)
+number_en_US : nil
+number_ur_IN : nil
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : en_US
+🧚🏻‍♀️ compare identifier : ur_IN
+
+* input number
+number_en_US : 123,456,789
+number_ur_IN : ۱۲۳٬۴۵۶٬۷۸۹
+
+* to number
+number_en_US : 123456789
+number_ur_IN : 123456789
+
+* to localized number string (en_US)
+number_en_US : 123,456,789
+number_ur_IN : 123,456,789
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : en_US
+🧚🏻‍♀️ compare identifier : ur_IN
+
+* input number
+number_en_US : 123,456,789.123
+number_ur_IN : ۱۲۳٬۴۵۶٬۷۸۹٫۱۲۳
+
+* to number
+number_en_US : 123456789.123
+number_ur_IN : nil
+
+* to localized number string (en_US)
+number_en_US : nil
+number_ur_IN : nil
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : en_US
+🧚🏻‍♀️ compare identifier : ne
+
+* input number
+number_en_US : 123
+number_ne : १२३
+
+* to number
+number_en_US : 123
+number_ne : 123
+
+* to localized number string (en_US)
+number_en_US : 123
+number_ne : 123
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : en_US
+🧚🏻‍♀️ compare identifier : ne
+
+* input number
+number_en_US : 123.4
+number_ne : १२३.४
+
+* to number
+number_en_US : 123.4
+number_ne : 123.4
+
+* to localized number string (en_US)
+number_en_US : 123.4
+number_ne : 123.4
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : en_US
+🧚🏻‍♀️ compare identifier : ne
+
+* input number
+number_en_US : 123,456,789
+number_ne : १२३,४५६,७८९
+
+* to number
+number_en_US : 123456789
+number_ne : 123456789
+
+* to localized number string (en_US)
+number_en_US : 123,456,789
+number_ne : 123,456,789
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : en_US
+🧚🏻‍♀️ compare identifier : ne
+
+* input number
+number_en_US : 123,456,789.123
+number_ne : १२३,४५६,७८९.१२३
+
+* to number
+number_en_US : 123456789.123
+number_ne : 123456789.123
+
+* to localized number string (en_US)
+number_en_US : 123,456,789.123
+number_ne : 123,456,789.123
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : en_US
+🧚🏻‍♀️ compare identifier : fr_FR
+
+* input number
+number_en_US : 123
+number_fr_FR : 123
+
+* to number
+number_en_US : 123
+number_fr_FR : 123
+
+* to localized number string (en_US)
+number_en_US : 123
+number_fr_FR : 123
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : en_US
+🧚🏻‍♀️ compare identifier : fr_FR
+
+* input number
+number_en_US : 123.4
+number_fr_FR : 123,4
+
+* to number
+number_en_US : 123.4
+number_fr_FR : nil
+
+* to localized number string (en_US)
+number_en_US : nil
+number_fr_FR : nil
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : en_US
+🧚🏻‍♀️ compare identifier : fr_FR
+
+* input number
+number_en_US : 123,456,789
+number_fr_FR : 123 456 789
+
+* to number
+number_en_US : 123456789
+number_fr_FR : 123456789
+
+* to localized number string (en_US)
+number_en_US : 123,456,789
+number_fr_FR : 123,456,789
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : en_US
+🧚🏻‍♀️ compare identifier : fr_FR
+
+* input number
+number_en_US : 123,456,789.123
+number_fr_FR : 123 456 789,123
+
+* to number
+number_en_US : 123456789.123
+number_fr_FR : nil
+
+* to localized number string (en_US)
+number_en_US : nil
+number_fr_FR : nil
+
+
+--------------
+  
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ne
+🧚🏻‍♀️ compare identifier : ur_IN
+
+* input number
+number_ne : १२३
+number_ur_IN : ۱۲۳
+
+* to number
+number_ne : 123
+number_ur_IN : 123
+
+* to localized number string (ne)
+number_ne : १२३
+number_ur_IN : १२३
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ne
+🧚🏻‍♀️ compare identifier : ur_IN
+
+* input number
+number_ne : १२३.४
+number_ur_IN : ۱۲۳٫۴
+
+* to number
+number_ne : 123.4
+number_ur_IN : nil
+
+* to localized number string (ne)
+number_ne : nil
+number_ur_IN : nil
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ne
+🧚🏻‍♀️ compare identifier : ur_IN
+
+* input number
+number_ne : १२३,४५६,७८९
+number_ur_IN : ۱۲۳٬۴۵۶٬۷۸۹
+
+* to number
+number_ne : 123456789
+number_ur_IN : 123456789
+
+* to localized number string (ne)
+number_ne : 🧚🏻‍♀️ origin identifier : ne
+🧚🏻‍♀️ compare identifier : ur_IN
+
+* input number
+number_ne : १२३
+number_ur_IN : ۱۲۳
+
+* to number
+number_ne : 123
+number_ur_IN : 123
+
+* to localized number string (ne)
+number_ne : १२३
+number_ur_IN : १२३
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ne
+🧚🏻‍♀️ compare identifier : ur_IN
+
+* input number
+number_ne : १२३.४
+number_ur_IN : ۱۲۳٫۴
+
+* to number
+number_ne : 123.4
+number_ur_IN : nil
+
+* to localized number string (ne)
+number_ne : nil
+number_ur_IN : nil
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ne
+🧚🏻‍♀️ compare identifier : ur_IN
+
+* input number
+number_ne : १२३,४५६,७८९
+number_ur_IN : ۱۲۳٬۴۵۶٬۷۸۹
+
+* to number
+number_ne : 123456789
+number_ur_IN : 123456789
+
+* to localized number string (ne)
+number_ne : \340१२३,४५६,७८९
+number_ur_IN : १२३,४५६,७८९
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ne
+🧚🏻‍♀️ compare identifier : ur_IN
+
+* input number
+number_ne : १२३,४५६,७८९.१२३
+number_ur_IN : ۱۲۳٬۴۵۶٬۷۸۹٫۱۲۳
+
+* to number
+number_ne : 123456789.123
+number_ur_IN : nil
+
+* to localized number string (ne)
+number_ne : nil
+number_ur_IN : nil
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ne
+🧚🏻‍♀️ compare identifier : en_US
+
+* input number
+number_ne : १२३
+number_en_US : 123
+
+* to number
+number_ne : 123
+number_en_US : 123
+
+* to localized number string (ne)
+number_ne : १२३
+number_en_US : १२३
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ne
+🧚🏻‍♀️ compare identifier : en_US
+
+* input number
+number_ne : १२३.४
+number_en_US : 123.4
+
+* to number
+number_ne : 123.4
+number_en_US : 123.4
+
+* to localized number string (ne)
+number_ne : १२३.४
+number_en_US : १२३.४
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ne
+🧚🏻‍♀️ compare identifier : en_US
+
+* input number
+number_ne : १२३,४५६,७८९
+number_en_US : 123,456,789
+
+* to number
+number_ne : 123456789
+number_en_US : 123456789
+
+* to localized number string (ne)
+number_ne : १२३,४५६,७८९
+number_en_US : १२३,४५६,७८९
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ne
+🧚🏻‍♀️ compare identifier : en_US
+
+* input number
+number_ne : १२३,४५६,७८९.१२३
+number_en_US : 123,456,789.123
+
+* to number
+number_ne : 123456789.123
+number_en_US : 123456789.123
+
+* to localized number string (ne)
+number_ne : १२३,४५६,७८९.१२३
+number_en_US : १२३,४५६,७८९.१२३
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ne
+🧚🏻‍♀️ compare identifier : fr_FR
+
+* input number
+number_ne : १२३
+number_fr_FR : 123
+
+* to number
+number_ne : 123
+number_fr_FR : 123
+
+* to localized number string (ne)
+number_ne : १२३
+number_fr_FR : १२३
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ne
+🧚🏻‍♀️ compare identifier : fr_FR
+
+* input number
+number_ne : १२३.४
+number_fr_FR : 123,4
+
+* to number
+number_ne : 123.4
+number_fr_FR : nil
+
+* to localized number string (ne)
+number_ne : nil
+number_fr_FR : nil
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ne
+🧚🏻‍♀️ compare identifier : fr_FR
+
+* input number
+number_ne : १२३,४५६,७८९
+number_fr_FR : 123 456 789
+
+* to number
+number_ne : 123456789
+number_fr_FR : 123456789
+
+* to localized number string (ne)
+number_ne : १२३,४५६,७८९
+number_fr_FR : १२३,४५६,७८९
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ne
+🧚🏻‍♀️ compare identifier : fr_FR
+
+* input number
+number_ne : १२३,४५६,७८९.१२३
+number_fr_FR : 123 456 789,123
+
+* to number
+number_ne : 123456789.123
+number_fr_FR : nil
+
+* to localized number string (ne)
+number_ne : nil
+number_fr_FR : nil
+
+  
+-------------------
+
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ur_IN
+🧚🏻‍♀️ compare identifier : ne
+
+* input number
+number_ur_IN : ۱۲۳
+number_ne : १२३
+
+* to number
+number_ur_IN : 123
+number_ne : 123
+
+* to localized number string (ur_IN)
+number_ur_IN : ۱۲۳
+number_ne : ۱۲۳
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ur_IN
+🧚🏻‍♀️ compare identifier : ne
+
+* input number
+number_ur_IN : ۱۲۳٫۴
+number_ne : १२३.४
+
+* to number
+number_ur_IN : 123.4
+number_ne : nil
+
+* to localized number string (ur_IN)
+number_ur_IN : nil
+number_ne : nil
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ur_IN
+🧚🏻‍♀️ compare identifier : ne
+
+* input number
+number_ur_IN : ۱۲۳٬۴۵۶٬۷۸۹
+number_ne : १२३,४५६,७८९
+
+* to number
+number_ur_IN : 123456789
+number_ne : nil
+
+* to localized number string (ur_IN)
+number_ur_IN : nil
+number_ne : nil
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ur_IN
+🧚🏻‍♀️ compare identifier : ne
+
+* input number
+number_ur_IN : ۱۲۳٬۴۵۶٬۷۸۹٫۱۲۳
+number_ne : १२३,४५६,७८९.१२३
+
+* to number
+number_ur_IN : 123456789.123
+number_ne : nil
+
+* to localized number string (ur_IN)
+number_ur_IN : nil
+number_ne : nil
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ur_IN
+🧚🏻‍♀️ compare identifier : en_US
+
+* input number
+number_ur_IN : ۱۲۳
+number_en_US : 123
+
+* to number
+number_ur_IN : 123
+number_en_US : 123
+
+* to localized number string (ur_IN)
+number_ur_IN : ۱۲۳
+number_en_US : ۱۲۳
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ur_IN
+🧚🏻‍♀️ compare identifier : en_US
+
+* input number
+number_ur_IN : ۱۲۳٫۴
+number_en_US : 123.4
+
+* to number
+number_ur_IN : 123.4
+number_en_US : nil
+
+* to localized number string (ur_IN)
+number_ur_IN : nil
+number_en_US : nil
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ur_IN
+🧚🏻‍♀️ compare identifier : en_US
+
+* input number
+number_ur_IN : ۱۲۳٬۴۵۶٬۷۸۹
+number_en_US : 123,456,789
+
+* to number
+number_ur_IN : 123456789
+number_en_US : nil
+
+* to localized number string (ur_IN)
+number_ur_IN : nil
+number_en_US : nil
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ur_IN
+🧚🏻‍♀️ compare identifier : en_US
+
+* input number
+number_ur_IN : ۱۲۳٬۴۵۶٬۷۸۹٫۱۲۳
+number_en_US : 123,456,789.123
+
+* to number
+number_ur_IN : 123456789.123
+number_en_US : nil
+
+* to localized number string (ur_IN)
+number_ur_IN : nil
+number_en_US : nil
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ur_IN
+🧚🏻‍♀️ compare identifier : fr_FR
+
+* input number
+number_ur_IN : ۱۲۳
+number_fr_FR : 123
+
+* to number
+number_ur_IN : 123
+number_fr_FR : 123
+
+* to localized number string (ur_IN)
+number_ur_IN : ۱۲۳
+number_fr_FR : ۱۲۳
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ur_IN
+🧚🏻‍♀️ compare identifier : fr_FR
+
+* input number
+number_ur_IN : ۱۲۳٫۴
+number_fr_FR : 123,4
+
+* to number
+number_ur_IN : 123.4
+number_fr_FR : 123.4
+
+* to localized number string (ur_IN)
+number_ur_IN : ۱۲۳٫۴
+number_fr_FR : ۱۲۳٫۴
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ur_IN
+🧚🏻‍♀️ compare identifier : fr_FR
+
+* input number
+number_ur_IN : ۱۲۳٬۴۵۶٬۷۸۹
+number_fr_FR : 123 456 789
+
+* to number
+number_ur_IN : 123456789
+number_fr_FR : 123456789
+
+* to localized number string (ur_IN)
+number_ur_IN : ۱۲۳٬۴۵۶٬۷۸۹
+number_fr_FR : ۱۲۳٬۴۵۶٬۷۸۹
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : ur_IN
+🧚🏻‍♀️ compare identifier : fr_FR
+
+* input number
+number_ur_IN : ۱۲۳٬۴۵۶٬۷۸۹٫۱۲۳
+number_fr_FR : 123 456 789,123
+
+* to number
+number_ur_IN : 123456789.123
+number_fr_FR : 123456789.123
+
+* to localized number string (ur_IN)
+number_ur_IN : ۱۲۳٬۴۵۶٬۷۸۹٫۱۲۳
+number_fr_FR : ۱۲۳٬۴۵۶٬۷۸۹٫۱۲۳
+
+------
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : fr_FR
+🧚🏻‍♀️ compare identifier : ur_IN
+
+* input number
+number_fr_FR : 123
+number_ur_IN : ۱۲۳
+
+* to number
+number_fr_FR : 123
+number_ur_IN : 123
+
+* to localized number string (fr_FR)
+number_fr_FR : 123
+number_ur_IN : 123
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : fr_FR
+🧚🏻‍♀️ compare identifier : ur_IN
+
+* input number
+number_fr_FR : 123,4
+number_ur_IN : ۱۲۳٫۴
+
+* to number
+number_fr_FR : 123.4
+number_ur_IN : 123.4
+
+* to localized number string (fr_FR)
+number_fr_FR : 123,4
+number_ur_IN : 123,4
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : fr_FR
+🧚🏻‍♀️ compare identifier : ur_IN
+
+* input number
+number_fr_FR : 123 456 789
+number_ur_IN : ۱۲۳٬۴۵۶٬۷۸۹
+
+* to number
+number_fr_FR : 123456789
+number_ur_IN : 123456789
+
+* to localized number string (fr_FR)
+number_fr_FR : 123 456 789
+number_ur_IN : 123 456 789
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : fr_FR
+🧚🏻‍♀️ compare identifier : ur_IN
+
+* input number
+number_fr_FR : 123 456 789,123
+number_ur_IN : ۱۲۳٬۴۵۶٬۷۸۹٫۱۲۳
+
+* to number
+number_fr_FR : 123456789.123
+number_ur_IN : 123456789.123
+
+* to localized number string (fr_FR)
+number_fr_FR : 123 456 789,123
+number_ur_IN : 123 456 789,123
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : fr_FR
+🧚🏻‍♀️ compare identifier : ne
+
+* input number
+number_fr_FR : 123
+number_ne : १२३
+
+* to number
+number_fr_FR : 123
+number_ne : 123
+
+* to localized number string (fr_FR)
+number_fr_FR : 123
+number_ne : 123
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : fr_FR
+🧚🏻‍♀️ compare identifier : ne
+
+* input number
+number_fr_FR : 123,4
+number_ne : १२३.४
+
+* to number
+number_fr_FR : 123.4
+number_ne : nil
+
+* to localized number string (fr_FR)
+number_fr_FR : nil
+number_ne : nil
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : fr_FR
+🧚🏻‍♀️ compare identifier : ne
+
+* input number
+number_fr_FR : 123 456 789
+number_ne : १२३,४५६,७८९
+
+* to number
+number_fr_FR : 123456789
+number_ne : nil
+
+* to localized number string (fr_FR)
+number_fr_FR : nil
+number_ne : nil
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : fr_FR
+🧚🏻‍♀️ compare identifier : ne
+
+* input number
+number_fr_FR : 123 456 789,123
+number_ne : १२३,४५६,७८९.१२३
+
+* to number
+number_fr_FR : 123456789.123
+number_ne : nil
+
+* to localized number string (fr_FR)
+number_fr_FR : nil
+number_ne : nil
+
+
+ℹ️ [INFO]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : fr_FR
+🧚🏻‍♀️ compare identifier : en_US
+
+* input number
+number_fr_FR : 123
+number_en_US : 123
+
+* to number
+number_fr_FR : 123
+number_en_US : 123
+
+* to localized number string (fr_FR)
+number_fr_FR : 123
+number_en_US : 123
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : fr_FR
+🧚🏻‍♀️ compare identifier : en_US
+
+* input number
+number_fr_FR : 123,4
+number_en_US : 123.4
+
+* to number
+number_fr_FR : 123.4
+number_en_US : nil
+
+* to localized number string (fr_FR)
+number_fr_FR : nil
+number_en_US : nil
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : fr_FR
+🧚🏻‍♀️ compare identifier : en_US
+
+* input number
+number_fr_FR : 123 456 789
+number_en_US : 123,456,789
+
+* to number
+number_fr_FR : 123456789
+number_en_US : nil
+
+* to localized number string (fr_FR)
+number_fr_FR : nil
+number_en_US : nil
+
+
+🆘 [ERROR]
+- log place : LocalizedNumberFormatterTest
+- message
+🧚🏻‍♀️ origin identifier : fr_FR
+🧚🏻‍♀️ compare identifier : en_US
+
+* input number
+number_fr_FR : 123 456 789,123
+number_en_US : 123,456,789.123
+
+* to number
+number_fr_FR : 123456789.123
+number_en_US : nil
+
+* to localized number string (fr_FR)
+number_fr_FR : nil
+number_en_US : nil
