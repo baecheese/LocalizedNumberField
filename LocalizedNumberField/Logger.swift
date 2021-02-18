@@ -35,37 +35,43 @@ public class Logger : NSObject {
         _logPlace = "\(logPlace)"
     }
     
-    public func debug(message: Any) {
-        // 조건부 컴파일 블록
+    public func debug(function: String = #function, line: Int = #line, message: Any) {
         #if DEBUG
-            let log = format(logLevel: LogLevel.DEBUG, message: message)
+        let log = format(logLevel: LogLevel.DEBUG, function: function, line: line, message: message)
             print(log)
         #elseif RELEASE
             //TODO log server에 전송
         #endif
     }
     
-    public func info(message: Any) {
-        let log = format(logLevel: LogLevel.INFO, message: message)
+    public func info(function: String = #function, line: Int = #line, message: Any) {
+        #if DEBUG
+        let log = format(logLevel: LogLevel.INFO, function: function, line: line, message: message)
         print(log)
+        #endif
     }
     
-    public func warn(message: Any) {
-        let log = format(logLevel: LogLevel.WARN, message: message)
+    public func warn(function: String = #function, line: Int = #line, message: Any) {
+        #if DEBUG
+        let log = format(logLevel: LogLevel.WARN, function: function, line: line, message: message)
         print(log)
+        #endif
     }
     
-    public func error(message: Any) {
-        let log = format(logLevel: LogLevel.ERROR, message: message)
+    public func error(function: String = #function, line: Int = #line, message: Any) {
+        #if DEBUG
+        let log = format(logLevel: LogLevel.ERROR, function: function, line: line, message: message)
         print(log)
+        #endif
     }
     
-    private func format(logLevel: LogLevel, message: Any) -> String {
+    private func format(logLevel: LogLevel, function: String, line: Int, message: Any) -> String {
         return
             """
 
             \(logLevel.headerMessage)
             - log place : \(_logPlace)
+            - function : \(function)
             - message
             \(message)
             
