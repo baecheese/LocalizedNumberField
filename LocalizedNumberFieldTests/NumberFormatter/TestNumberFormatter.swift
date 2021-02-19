@@ -57,6 +57,7 @@ class TestNumberFormatter: XCTestCase {
             numberFormatter.numberStyle = .decimal
             numberFormatter.locale = Locale(identifier: identifier)
             for (identifier_compare, numbers_compare) in numbersDictionary {
+                // identifier가 다른 NumberString 테스트
                 guard identifier != identifier_compare else { continue }
                 let originNumbers = numbersDictionary[identifier]!
                 let compareNumbers = numbers_compare
@@ -66,6 +67,7 @@ class TestNumberFormatter: XCTestCase {
                     let currentOriginNumber = numberFormatter.number(from: origin)
                     let currentCompareNumber = numberFormatter.number(from: compare)
                     guard nil != currentCompareNumber else {
+                        // ⚠️ String -> NSNumber로 변환 실패 시 로그
                         log.error(
                             message:
                                 debugMessage(
