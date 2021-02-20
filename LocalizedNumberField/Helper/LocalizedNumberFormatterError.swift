@@ -9,7 +9,7 @@ import Foundation
 
 enum LocalizedNumberFormatterError: Error {
     /***
-     🙅🏻‍♀️ 올바르지 않은 숫자 포멧
+     🙅🏻‍♀️ 올바르지 않은 숫자 포맷
      1. decimal/grouping separator 외에 숫자가 아닌 문자가 포함된 경우
         - 10️⃣0️⃣0️⃣ (이모지 포함)
         - looo (알파벳 LOOO)
@@ -23,6 +23,9 @@ enum LocalizedNumberFormatterError: Error {
     
     case invaildCharacters
     case moreThanOneDecimalSeparator
-    case reverseGroupingSeparatorAndDecimalSeparator
+    case reverseSeparator
+    case unknown
+    
+    case notConvertedNSNumberToLocalizedString
     
 }

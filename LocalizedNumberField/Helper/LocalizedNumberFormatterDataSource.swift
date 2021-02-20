@@ -11,5 +11,7 @@ protocol LocalizedNumberFormatterDataSource {
     
     var fromLocale: Locale { get }
     var toLocale: Locale { get }
-    var amount: String { get set }
+    
+    func number(from value: String) throws -> NSNumber
+    func localizedNumberString(from value: String, style: NumberFormatter.Style) throws -> String
 }
