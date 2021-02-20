@@ -33,19 +33,59 @@ class LocalizedNumberFormatterTest: XCTestCase {
         // 특수 숫자 섞일 경우
         "123१२३۱۲۳",
         "123१२३.۱۲۳",
-        "123,१२३.۱۲۳",
         "123,१२३.۱۲۳"
     ]
-    let invaildAmounts = ["0.0.1", "10️⃣0️⃣", "loo", "lzoo", "123.456,789"]
-    
+    let invaildAmounts = [
+        "0.0.1",
+        "10️⃣0️⃣",
+        "loo",
+        "lzoo",
+        "123.456,789"
+    ]
     
     func testValueToNumber() throws {
         for vaild in vaildAmounts {
-            XCTAssertNoThrow(try toNumber(value: vaild))
+            let formatter = LocalizedNumberFormatter(from: locale_enUS, to: locale_enUS)
+            XCTAssertNoThrow(try formatter.number(from: vaild))
         }
         for invaild in invaildAmounts {
-            XCTAssertThrowsError(try toNumber(value: invaild))
+            let formatter = LocalizedNumberFormatter(from: locale_enUS, to: locale_enUS)
+            XCTAssertThrowsError(try formatter.number(from: invaild))
         }
+    }
+    
+    let vaildAmountLocalizedStrings_enUS: [String: String] = [
+        "1234": "1,234",
+        "1,234": "1,234",
+        "1.2": "1.2",
+        "1,200.13": "1,200.13",
+        // 0으로 처리
+        "": "0",
+        ".": "0",
+        //first or last가 decimalSeparator면 0 처리
+        ".134": "0.134",
+        "123.": "123",
+        // 음수
+        "-101010": "-101,010",
+        "-1010.10": "-1,010.1",
+        "-1,000.023": "-1,000.023",
+        // 특수 숫자 섞일 경우
+        "123१२३۱۲۳": "123,123,123",
+        "123१२३.۱۲۳": "123,123.123",
+        "123,१२३.۱۲۳": "123,123.123"
+    ]
+    
+    func testToLocalizedNumberString() throws {
+        for vaildAmount in vaildAmounts {
+            let formatter = LocalizedNumberFormatter(from: .current, to: .current)
+            let localizedString = try formatter.localizedNumberString(from: vaildAmount, style: .decimal)
+            XCTAssertEqual(vaildAmountLocalizedStrings_enUS[vaildAmount] ?? "", localizedString)
+        }
+        for invaildAmount in invaildAmounts {
+            let formatter = LocalizedNumberFormatter(from: .current, to: .current)
+            XCTAssertThrowsError(try formatter.localizedNumberString(from: invaildAmount, style: .decimal))
+        }
+        
     }
     
     func toNumber(value: String) throws -> NSNumber {
@@ -95,17 +135,6 @@ class LocalizedNumberFormatterTest: XCTestCase {
         return (integer: integerValue, decimal: decimalValue)
     }
     
-    func testInvaildCharacters() throws {
-        for vaildAmount in vaildAmounts {
-            let formatter = LocalizedNumberFormatter(from: .current, to: .current, value: vaildAmount)
-            XCTAssertNoThrow(try formatter.localizedString(.decimal))
-        }
-        for invaildAmount in invaildAmounts {
-            let formatter = LocalizedNumberFormatter(from: .current, to: .current, value: invaildAmount)
-            XCTAssertThrowsError(try formatter.localizedString(.decimal))
-        }
-        
-    }
     
 }
 
