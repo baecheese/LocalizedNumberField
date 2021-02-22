@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99307D3D25E3A95700E482AA /* LocalizedNumberFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99307D3C25E3A95700E482AA /* LocalizedNumberFieldDelegate.swift */; };
 		9941EBCF25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9941EBCE25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift */; };
 		995E0BCF25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E0BCC25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift */; };
 		995E0BD025E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E0BCD25E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		99307D3C25E3A95700E482AA /* LocalizedNumberFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFieldDelegate.swift; sourceTree = "<group>"; };
 		9941EBCE25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFormatterError.swift; sourceTree = "<group>"; };
 		995E0BCC25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFieldViewModel.swift; sourceTree = "<group>"; };
 		995E0BCD25E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFieldDataSource.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			children = (
 				995E0BCE25E39E5B002D39CE /* LocalizedNumberField.swift */,
 				995E0BCD25E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift */,
+				99307D3C25E3A95700E482AA /* LocalizedNumberFieldDelegate.swift */,
 				995E0BCC25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift */,
 			);
 			path = View;
@@ -325,6 +328,7 @@
 				9941EBCF25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift in Sources */,
 				995E0BD025E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift in Sources */,
 				996C1B0925D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift in Sources */,
+				99307D3D25E3A95700E482AA /* LocalizedNumberFieldDelegate.swift in Sources */,
 				995E0BCF25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift in Sources */,
 				999E37C425D3A47C007E66F5 /* Locale.swift in Sources */,
 			);
