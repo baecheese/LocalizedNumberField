@@ -13,10 +13,11 @@ struct LocalizedNumberField: View, LocalizedNumberFieldDataSource {
     @State internal var text: String
     @State internal var keyboardType: UIKeyboardType
     @State internal var formatter: LocalizedNumberFormatter
-    
-    @State private var log: String = "💛log"
     @State private var textfieldBorderColor: UIColor = .systemFill
     @State private var isLoading: Bool = false
+    
+    var delegate: LocalizedNumberFieldDelegate?
+    @State private var  log: String = ""
     
     var body: some View {
         VStack {
@@ -25,46 +26,43 @@ struct LocalizedNumberField: View, LocalizedNumberFieldDataSource {
                     placeHolder,
                     text: $text,
                     onEditingChanged: {
+                        self.log += "\nonEditingChanged (\($0)) :\(text)"
                         if false == $0 {
                             textfieldBorderColor = .systemFill
                         }
-                        log += "\nonEditingChanged \($0)"
                     },
                     onCommit: {
-                        log += "\nonCommit"
+                        self.log += "\nonCommit :\(text)"
                         try? validate(text: text)
                     }
                 )
                 .keyboardType(keyboardType)
                 .border(Color(textfieldBorderColor), width: 1)
+//                Text(log)
             }
-            Label(text, systemImage: "1.circle")
-            Label(log, systemImage: "2.circle")
         }
     }
     
     func validate(text: String) throws {
         do {
-            let number = try formatter.number(from: text)
             let localizedNumber = try formatter.localizedNumberString(from: text, style: .decimal)
-            log += """
-            toNumber: \(number)
-            localizedNumber: \(localizedNumber)
-            -----------------------------------
-            """
             self.text = localizedNumber
+            self.delegate?.textFieldDidEndEditing(from: text, to: self.text, formatter: formatter, error: nil)
         } catch {
             textfieldBorderColor = .systemRed
-            log += " - error: \n\(error)"
+            self.delegate?.textFieldDidEndEditing(from: text, to: self.text, formatter: formatter, error: (error as? LocalizedNumberFormatterError) ?? LocalizedNumberFormatterError.unknown)
             throw error
         }
     }
+    
+    
     
 }
 
 struct LocalizedNumberField_Previews: PreviewProvider {
     
     typealias ViewModel = LocalizedNumberFieldViewModel
+    
     static var previews: some View {
         VStack {
             LocalizedNumberField(
