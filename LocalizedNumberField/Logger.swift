@@ -31,7 +31,7 @@ public class Logger : NSObject {
     
     private let _logPlace: String
     
-    public init(logPlace: AnyClass) {
+    public init(logPlace: Any) {
         _logPlace = "\(logPlace)"
     }
     

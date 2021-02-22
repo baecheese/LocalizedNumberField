@@ -6,11 +6,10 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
     
     var body: some View {
-        NumberTextField()
+        Label("TEST", systemImage: "1.circle")
     }
 }
 
