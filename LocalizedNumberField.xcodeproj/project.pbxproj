@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9941EBCF25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9941EBCE25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift */; };
+		995E0BCF25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E0BCC25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift */; };
+		995E0BD025E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E0BCD25E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift */; };
+		995E0BD125E39E5B002D39CE /* LocalizedNumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E0BCE25E39E5B002D39CE /* LocalizedNumberField.swift */; };
 		996C1ACF25D1297E002B5822 /* LocalizedNumberFieldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1ACE25D1297E002B5822 /* LocalizedNumberFieldApp.swift */; };
 		996C1AD125D1297E002B5822 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1AD025D1297E002B5822 /* ContentView.swift */; };
 		996C1AD325D1297E002B5822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996C1AD225D1297E002B5822 /* Assets.xcassets */; };
 		996C1AD625D1297E002B5822 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996C1AD525D1297E002B5822 /* Preview Assets.xcassets */; };
 		996C1AEC25D1297F002B5822 /* LocalizedNumberFieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1AEB25D1297F002B5822 /* LocalizedNumberFieldUITests.swift */; };
-		996C1AFD25D129B2002B5822 /* NumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1AFC25D129B2002B5822 /* NumberTextField.swift */; };
 		996C1B0225D25349002B5822 /* LocalizedNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1B0125D25349002B5822 /* LocalizedNumberFormatter.swift */; };
 		996C1B0925D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1B0825D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift */; };
 		996C1B1125D25789002B5822 /* LocalizedNumberFormatterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1B1025D25789002B5822 /* LocalizedNumberFormatterTest.swift */; };
@@ -43,6 +45,9 @@
 
 /* Begin PBXFileReference section */
 		9941EBCE25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFormatterError.swift; sourceTree = "<group>"; };
+		995E0BCC25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFieldViewModel.swift; sourceTree = "<group>"; };
+		995E0BCD25E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFieldDataSource.swift; sourceTree = "<group>"; };
+		995E0BCE25E39E5B002D39CE /* LocalizedNumberField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedNumberField.swift; sourceTree = "<group>"; };
 		996C1ACB25D1297E002B5822 /* LocalizedNumberField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizedNumberField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		996C1ACE25D1297E002B5822 /* LocalizedNumberFieldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFieldApp.swift; sourceTree = "<group>"; };
 		996C1AD025D1297E002B5822 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,7 +59,6 @@
 		996C1AE725D1297F002B5822 /* LocalizedNumberFieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizedNumberFieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		996C1AEB25D1297F002B5822 /* LocalizedNumberFieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFieldUITests.swift; sourceTree = "<group>"; };
 		996C1AED25D1297F002B5822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		996C1AFC25D129B2002B5822 /* NumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTextField.swift; sourceTree = "<group>"; };
 		996C1B0125D25349002B5822 /* LocalizedNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFormatter.swift; sourceTree = "<group>"; };
 		996C1B0825D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFormatterDataSource.swift; sourceTree = "<group>"; };
 		996C1B1025D25789002B5822 /* LocalizedNumberFormatterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFormatterTest.swift; sourceTree = "<group>"; };
@@ -166,7 +170,9 @@
 		996C1B0625D25723002B5822 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				996C1AFC25D129B2002B5822 /* NumberTextField.swift */,
+				995E0BCE25E39E5B002D39CE /* LocalizedNumberField.swift */,
+				995E0BCD25E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift */,
+				995E0BCC25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -314,10 +320,12 @@
 				996C1AD125D1297E002B5822 /* ContentView.swift in Sources */,
 				996C1B0225D25349002B5822 /* LocalizedNumberFormatter.swift in Sources */,
 				996C1ACF25D1297E002B5822 /* LocalizedNumberFieldApp.swift in Sources */,
-				996C1AFD25D129B2002B5822 /* NumberTextField.swift in Sources */,
+				995E0BD125E39E5B002D39CE /* LocalizedNumberField.swift in Sources */,
 				999E37B425D26279007E66F5 /* Logger.swift in Sources */,
 				9941EBCF25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift in Sources */,
+				995E0BD025E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift in Sources */,
 				996C1B0925D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift in Sources */,
+				995E0BCF25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift in Sources */,
 				999E37C425D3A47C007E66F5 /* Locale.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
