@@ -11,15 +11,18 @@
 		9941EBCF25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9941EBCE25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift */; };
 		995E0BCF25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E0BCC25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift */; };
 		995E0BD025E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E0BCD25E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift */; };
-		995E0BD125E39E5B002D39CE /* LocalizedNumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E0BCE25E39E5B002D39CE /* LocalizedNumberField.swift */; };
+		995E0BD125E39E5B002D39CE /* LocalizedNumberFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E0BCE25E39E5B002D39CE /* LocalizedNumberFieldView.swift */; };
 		996C1ACF25D1297E002B5822 /* LocalizedNumberFieldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1ACE25D1297E002B5822 /* LocalizedNumberFieldApp.swift */; };
-		996C1AD125D1297E002B5822 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1AD025D1297E002B5822 /* ContentView.swift */; };
 		996C1AD325D1297E002B5822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996C1AD225D1297E002B5822 /* Assets.xcassets */; };
 		996C1AD625D1297E002B5822 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996C1AD525D1297E002B5822 /* Preview Assets.xcassets */; };
 		996C1AEC25D1297F002B5822 /* LocalizedNumberFieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1AEB25D1297F002B5822 /* LocalizedNumberFieldUITests.swift */; };
 		996C1B0225D25349002B5822 /* LocalizedNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1B0125D25349002B5822 /* LocalizedNumberFormatter.swift */; };
 		996C1B0925D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1B0825D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift */; };
 		996C1B1125D25789002B5822 /* LocalizedNumberFormatterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C1B1025D25789002B5822 /* LocalizedNumberFormatterTest.swift */; };
+		999A4A5425E4C87B00909FD3 /* SampleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A4A5325E4C87B00909FD3 /* SampleList.swift */; };
+		999A4A5D25E4C8FA00909FD3 /* SampleFieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A4A5C25E4C8FA00909FD3 /* SampleFieldModel.swift */; };
+		999A4A6525E4D6D000909FD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A4A6425E4D6D000909FD3 /* ContentView.swift */; };
+		999A4A7325E4DE5B00909FD3 /* SampleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A4A7225E4DE5B00909FD3 /* SampleRow.swift */; };
 		999E37B425D26279007E66F5 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999E37B325D26279007E66F5 /* Logger.swift */; };
 		999E37C425D3A47C007E66F5 /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999E37C325D3A47C007E66F5 /* Locale.swift */; };
 		999E37CF25DA6A56007E66F5 /* TestNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999E37CE25DA6A56007E66F5 /* TestNumberFormatter.swift */; };
@@ -49,10 +52,9 @@
 		9941EBCE25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFormatterError.swift; sourceTree = "<group>"; };
 		995E0BCC25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFieldViewModel.swift; sourceTree = "<group>"; };
 		995E0BCD25E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFieldDataSource.swift; sourceTree = "<group>"; };
-		995E0BCE25E39E5B002D39CE /* LocalizedNumberField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedNumberField.swift; sourceTree = "<group>"; };
+		995E0BCE25E39E5B002D39CE /* LocalizedNumberFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFieldView.swift; sourceTree = "<group>"; };
 		996C1ACB25D1297E002B5822 /* LocalizedNumberField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizedNumberField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		996C1ACE25D1297E002B5822 /* LocalizedNumberFieldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFieldApp.swift; sourceTree = "<group>"; };
-		996C1AD025D1297E002B5822 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		996C1AD225D1297E002B5822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		996C1AD525D1297E002B5822 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		996C1AD725D1297E002B5822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +66,10 @@
 		996C1B0125D25349002B5822 /* LocalizedNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFormatter.swift; sourceTree = "<group>"; };
 		996C1B0825D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFormatterDataSource.swift; sourceTree = "<group>"; };
 		996C1B1025D25789002B5822 /* LocalizedNumberFormatterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFormatterTest.swift; sourceTree = "<group>"; };
+		999A4A5325E4C87B00909FD3 /* SampleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleList.swift; sourceTree = "<group>"; };
+		999A4A5C25E4C8FA00909FD3 /* SampleFieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFieldModel.swift; sourceTree = "<group>"; };
+		999A4A6425E4D6D000909FD3 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		999A4A7225E4DE5B00909FD3 /* SampleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRow.swift; sourceTree = "<group>"; };
 		999E37B325D26279007E66F5 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		999E37C325D3A47C007E66F5 /* Locale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
 		999E37CE25DA6A56007E66F5 /* TestNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNumberFormatter.swift; sourceTree = "<group>"; };
@@ -130,9 +136,10 @@
 			isa = PBXGroup;
 			children = (
 				996C1ACE25D1297E002B5822 /* LocalizedNumberFieldApp.swift */,
-				996C1AD025D1297E002B5822 /* ContentView.swift */,
+				999A4A6425E4D6D000909FD3 /* ContentView.swift */,
 				999E37B325D26279007E66F5 /* Logger.swift */,
 				999E37C325D3A47C007E66F5 /* Locale.swift */,
+				999A4A5225E4C86600909FD3 /* Example */,
 				9941EBCA25D25A8C00C60BAD /* Helper */,
 				996C1B0625D25723002B5822 /* View */,
 				996C1AD225D1297E002B5822 /* Assets.xcassets */,
@@ -172,12 +179,22 @@
 		996C1B0625D25723002B5822 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				995E0BCE25E39E5B002D39CE /* LocalizedNumberField.swift */,
+				995E0BCE25E39E5B002D39CE /* LocalizedNumberFieldView.swift */,
 				995E0BCD25E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift */,
 				99307D3C25E3A95700E482AA /* LocalizedNumberFieldDelegate.swift */,
 				995E0BCC25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		999A4A5225E4C86600909FD3 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				999A4A5325E4C87B00909FD3 /* SampleList.swift */,
+				999A4A5C25E4C8FA00909FD3 /* SampleFieldModel.swift */,
+				999A4A7225E4DE5B00909FD3 /* SampleRow.swift */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 		999E37E625DFA80A007E66F5 /* NumberFormatter */ = {
@@ -320,16 +337,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				996C1AD125D1297E002B5822 /* ContentView.swift in Sources */,
 				996C1B0225D25349002B5822 /* LocalizedNumberFormatter.swift in Sources */,
 				996C1ACF25D1297E002B5822 /* LocalizedNumberFieldApp.swift in Sources */,
-				995E0BD125E39E5B002D39CE /* LocalizedNumberField.swift in Sources */,
+				995E0BD125E39E5B002D39CE /* LocalizedNumberFieldView.swift in Sources */,
 				999E37B425D26279007E66F5 /* Logger.swift in Sources */,
+				999A4A5D25E4C8FA00909FD3 /* SampleFieldModel.swift in Sources */,
+				999A4A5425E4C87B00909FD3 /* SampleList.swift in Sources */,
 				9941EBCF25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift in Sources */,
 				995E0BD025E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift in Sources */,
 				996C1B0925D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift in Sources */,
 				99307D3D25E3A95700E482AA /* LocalizedNumberFieldDelegate.swift in Sources */,
+				999A4A6525E4D6D000909FD3 /* ContentView.swift in Sources */,
 				995E0BCF25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift in Sources */,
+				999A4A7325E4DE5B00909FD3 /* SampleRow.swift in Sources */,
 				999E37C425D3A47C007E66F5 /* Locale.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -475,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -502,7 +522,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = baecheese.LocalizedNumberField;
+				PRODUCT_BUNDLE_IDENTIFIER = baecheese.com.localizednumberfield;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -525,7 +545,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = baecheese.LocalizedNumberField;
+				PRODUCT_BUNDLE_IDENTIFIER = baecheese.com.localizednumberfield;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

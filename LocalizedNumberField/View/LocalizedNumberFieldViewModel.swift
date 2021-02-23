@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import SwiftUI
 
-class LocalizedNumberFieldViewModel: LocalizedNumberFieldDataSource {
+class LocalizedNumberFieldViewModel: LocalizedNumberFieldDataSource, Identifiable {
     
     var placeHolder: String
     var text: String
