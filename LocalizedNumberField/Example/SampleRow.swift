@@ -8,13 +8,35 @@
 import SwiftUI
 
 struct SampleRow: View {
+    
+    var dataSource: LocalizedNumberFieldViewModel
+    
+    private var title: String {
+        return """
+        🌎 from locale: \(dataSource.formatter.fromLocale.description)
+         -> to locale: \(dataSource.formatter.toLocale.description)
+        """
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(title)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .font(.system(size: 15.0, weight: .bold, design: .rounded))
+            LocalizedNumberFieldView(dataSource: dataSource)
+            Text("  \(dataSource.result.description)")
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .font(.system(size: 15.0, weight: .light, design: .rounded))
+        }
     }
 }
 
 struct SampleRow_Previews: PreviewProvider {
+    
+    static let sampleData = SampleFieldModel()
+    
     static var previews: some View {
-        SampleRow()
+        SampleRow(dataSource: sampleData.fieldViewModels[0])
+            .environmentObject(sampleData)
     }
 }

@@ -14,7 +14,7 @@ struct SampleList: View {
     var body: some View {
         List {
             ForEach(modelData.fieldViewModels) {
-                LocalizedNumberFieldView(dataSource: $0)
+                SampleRow(dataSource: $0)
             }
         }
     }

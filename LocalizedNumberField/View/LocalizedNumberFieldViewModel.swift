@@ -14,6 +14,7 @@ class LocalizedNumberFieldViewModel: LocalizedNumberFieldDataSource, Identifiabl
     var text: String
     var formatter: LocalizedNumberFormatter
     var keyboardType: UIKeyboardType
+    var result: LocalizedNumberFormatterResult = .none
     
     init(
         placeHolder: String,

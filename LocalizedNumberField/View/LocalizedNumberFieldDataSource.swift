@@ -17,4 +17,7 @@ protocol LocalizedNumberFieldDataSource {
     var formatter: LocalizedNumberFormatter { get }
     
     var keyboardType: UIKeyboardType { get }
+    
+    var result: LocalizedNumberFormatterResult { get set }
+    
 }

@@ -14,7 +14,8 @@ struct LocalizedNumberFieldView: View {
     var dataSource: LocalizedNumberFieldViewModel
     @State private var textfieldBorderColor: UIColor = .systemFill
     @State private var isLoading: Bool = false
-    @State private var  log: String = ""
+    @State private var log: String = ""
+    let logger = Logger(logPlace: LocalizedNumberFieldView.self)
     
     var index: Int {
         var index: Int = 0
@@ -38,12 +39,15 @@ struct LocalizedNumberFieldView: View {
                     onEditingChanged: {
                         self.log += "\nonEditingChanged (\($0)) :\(currentText)"
                         if false == $0 {
+                            logger.info(message: log)
+                            log.removeAll()
+                        } else {
                             textfieldBorderColor = .systemFill
                         }
                     },
                     onCommit: {
                         self.log += "\nonCommit :\(currentText)"
-//                        try? validate(text: text)
+                        try? validate(text: dataSource.text)
                     }
                 )
                 .keyboardType(dataSource.keyboardType)
@@ -53,15 +57,19 @@ struct LocalizedNumberFieldView: View {
     }
     
     func validate(text: String) throws {
-//        do {
-//            let localizedNumber = try dataSource.formatter.localizedNumberString(from: text, style: .decimal)
-//            self.text = localizedNumber
-//            self.delegate?.textFieldDidEndEditing(from: text, to: self.text, formatter: dataSource.formatter, error: nil)
-//        } catch {
-//            textfieldBorderColor = .systemRed
-//            self.delegate?.textFieldDidEndEditing(from: text, to: self.text, formatter: dataSource.formatter, error: (error as? LocalizedNumberFormatterError) ?? LocalizedNumberFormatterError.unknown)
-//            throw error
-//        }
+        log += "\nvalidate"
+        do {
+            let localizedNumber = try dataSource.formatter.localizedNumberString(from: text, style: .decimal)
+            dataSource.text = localizedNumber
+            dataSource.result = .success(from: text, to: localizedNumber)
+            log += "  - localizedNumber : \(localizedNumber)"
+        } catch {
+            textfieldBorderColor = .systemRed
+            dataSource.text = text
+            dataSource.result = .error(error)
+            log += "  - error : \(error)"            
+            throw error
+        }
     }
     
     
