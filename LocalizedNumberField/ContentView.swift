@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var modelData: SampleFieldModel
+    
     var body: some View {
         SampleList()
-            .environmentObject(SampleFieldModel())
+            .environmentObject(modelData)
     }
 }
 

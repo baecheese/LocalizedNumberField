@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct LocalizedNumberFieldApp: App {
+    
+    @StateObject var sampleModel = SampleFieldModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(sampleModel)
         }
     }
 }
