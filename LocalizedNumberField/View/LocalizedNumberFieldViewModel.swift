@@ -10,6 +10,7 @@ import SwiftUI
 
 class LocalizedNumberFieldViewModel: LocalizedNumberFieldDataSource, Identifiable {
     
+    var index: Int
     var placeHolder: String
     var text: String
     var formatter: LocalizedNumberFormatter
@@ -17,11 +18,13 @@ class LocalizedNumberFieldViewModel: LocalizedNumberFieldDataSource, Identifiabl
     var result: LocalizedNumberFormatterResult = .none
     
     init(
+        index: Int,
         placeHolder: String,
         text: String = "",
         formatter: LocalizedNumberFormatter,
         keyboardType: UIKeyboardType = .default
     ) {
+        self.index = index
         self.placeHolder = placeHolder
         self.text = text
         self.formatter = formatter

@@ -15,6 +15,7 @@ struct SampleList: View {
         List {
             ForEach(modelData.fieldViewModels) {
                 SampleRow(dataSource: $0)
+                    .environmentObject(modelData)
             }
         }
     }
