@@ -10,44 +10,24 @@ import SwiftUI
 struct LocalizedNumberFieldView: View {
     
     @EnvironmentObject var modelData: SampleFieldModel
-    
     var dataSource: LocalizedNumberFieldViewModel
     @State private var textfieldBorderColor: UIColor = .systemFill
-    @State private var isLoading: Bool = false
-    @State private var log: String = ""
-    let logger = Logger(logPlace: LocalizedNumberFieldView.self)
     
-    var index: Int {
-        var index: Int = 0
-        for viewModel in modelData.fieldViewModels {
-            guard dataSource.id != viewModel.id else { break }
-            index += 1
-        }
-        return index
-    }
-    
-    private var currentText: String {
-        dataSource.text
-    }
+    @Binding var isCommit: Bool
     
     var body: some View {
         VStack {
             HStack {
                 TextField(
                     dataSource.placeHolder,
-                    text: $modelData.fieldViewModels[index].text,
-                    onEditingChanged: {
-                        self.log += "\nonEditingChanged (\($0)) :\(currentText)"
-                        if false == $0 {
-                            logger.info(message: log)
-                            log.removeAll()
-                        } else {
-                            textfieldBorderColor = .systemFill
-                        }
+                    text: $modelData.fieldViewModels[dataSource.index].text,
+                    onEditingChanged: { onEditing in
+                        guard isCommit && onEditing else { return }
+                        isCommit.toggle()
                     },
                     onCommit: {
-                        self.log += "\nonCommit :\(currentText)"
                         try? validate(text: dataSource.text)
+                        isCommit.toggle()
                     }
                 )
                 .keyboardType(dataSource.keyboardType)
@@ -56,23 +36,22 @@ struct LocalizedNumberFieldView: View {
         }
     }
     
-    func validate(text: String) throws {
-        log += "\nvalidate"
+    private func validate(text: String) throws {
         do {
             let localizedNumber = try dataSource.formatter.localizedNumberString(from: text, style: .decimal)
-            dataSource.text = localizedNumber
-            dataSource.result = .success(from: text, to: localizedNumber)
-            log += "  - localizedNumber : \(localizedNumber)"
+            setResult(text: localizedNumber, result: .success(from: text, to: localizedNumber))
         } catch {
-            textfieldBorderColor = .systemRed
             dataSource.text = text
-            dataSource.result = .error(error)
-            log += "  - error : \(error)"            
+            setResult(text: text, result: .error(error))
             throw error
         }
     }
     
-    
+    private func setResult(text: String, result: LocalizedNumberFormatterResult) {
+        dataSource.text = text
+        dataSource.result = result
+        textfieldBorderColor = result.isError ? .systemRed : .systemFill
+    }
     
 }
 
@@ -82,7 +61,7 @@ struct LocalizedNumberField_Previews: PreviewProvider {
     
     static var previews: some View {
         VStack {
-            LocalizedNumberFieldView(dataSource: sampleData.fieldViewModels[0])
+            LocalizedNumberFieldView(dataSource: sampleData.fieldViewModels[0], isCommit: .constant(false))
                 .environmentObject(sampleData)
         }
     }

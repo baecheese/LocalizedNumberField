@@ -10,23 +10,23 @@ import SwiftUI
 struct SampleRow: View {
     
     var dataSource: LocalizedNumberFieldViewModel
+    @State private var isCommit: Bool = false
     
     private var title: String {
-        return """
-        🌎 from locale: \(dataSource.formatter.fromLocale.description)
-         -> to locale: \(dataSource.formatter.toLocale.description)
-        """
+        return "🌎 from \(dataSource.formatter.fromLocale.identifier) to \(dataSource.formatter.toLocale.identifier)"
     }
     
     var body: some View {
         VStack {
+            Spacer()
             Text(title)
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .font(.system(size: 15.0, weight: .bold, design: .rounded))
-            LocalizedNumberFieldView(dataSource: dataSource)
-            Text("  \(dataSource.result.description)")
+                .font(.system(size: 20.0, weight: .bold, design: .rounded))
+            LocalizedNumberFieldView(dataSource: dataSource, isCommit: $isCommit)
+            Text(" result: \(isCommit ? dataSource.result.description : "none")")
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .font(.system(size: 15.0, weight: .light, design: .rounded))
+                .font(.system(size: 18.0, weight: .light, design: .rounded))
+            Spacer()
         }
     }
 }

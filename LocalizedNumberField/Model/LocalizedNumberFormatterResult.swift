@@ -16,7 +16,7 @@ enum LocalizedNumberFormatterResult {
     var description: String {
         switch self {
         case .none:
-            return "hello"
+            return "none"
         case .success(let from, let to):
             return "\(from) -> \(to)"
         case .error(let error):
