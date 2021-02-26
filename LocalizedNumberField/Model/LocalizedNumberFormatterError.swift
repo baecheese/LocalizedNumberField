@@ -8,24 +8,25 @@
 import Foundation
 
 enum LocalizedNumberFormatterError: Error {
-    /***
-     🙅🏻‍♀️ 올바르지 않은 숫자 포맷
-     1. decimal/grouping separator 외에 숫자가 아닌 문자가 포함된 경우
-        - 10️⃣0️⃣0️⃣ (이모지 포함)
-        - looo (알파벳 LOOO)
-        - 100-100 (특수문자 포함)
-     2. decimal separator가 한 개 이상 들어간 경우
-        - 🇺🇸 en_US ) 1.0.2 (.이 두 개)
-     3. grouping separator와 decimal separator의 순서가 뒤집힌 경우
-        - 🇺🇸 en_US ) 1,000.12 (o)
-        - 🇺🇸 en_US ) 1.000,12 (x)
-     **/
-    
     case invaildCharacters
     case moreThanOneDecimalSeparator
     case reverseSeparator
+    case notConvertedNSNumberToLocalizedString
     case unknown
     
-    case notConvertedNSNumberToLocalizedString
     
+    var message: String {
+        switch self {
+        case .invaildCharacters:
+            return "올바르지 않은 문자가 포함되어있습니다."
+        case .moreThanOneDecimalSeparator:
+            return "소숫점 기호가 한 개 이상입니다."
+        case .reverseSeparator:
+            return "그룹 구분 기호와 소숫점 기호가 반대로 되어있습니다."
+        case .notConvertedNSNumberToLocalizedString:
+            return "현지화 문자로 변환 되지 않는 숫자입니다."
+        case .unknown:
+            return "알 수 없는 에러입니다."
+        }
+    }
 }

@@ -26,6 +26,7 @@ struct SampleRow: View {
             Text(" result: \(isCommit ? dataSource.result.description : "none")")
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .font(.system(size: 18.0, weight: .light, design: .rounded))
+                .lineLimit(0)
             Spacer()
         }
     }

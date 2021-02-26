@@ -11,7 +11,7 @@ enum LocalizedNumberFormatterResult {
     
     case none
     case success(from: String, to: String)
-    case error(Error)
+    case error(LocalizedNumberFormatterError)
     
     var description: String {
         switch self {
@@ -20,7 +20,7 @@ enum LocalizedNumberFormatterResult {
         case .success(let from, let to):
             return "\(from) -> \(to)"
         case .error(let error):
-            return "\(error)"
+            return "\(error.message)"
         }
     }
     

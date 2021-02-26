@@ -42,7 +42,8 @@ struct LocalizedNumberFieldView: View {
             setResult(text: localizedNumber, result: .success(from: text, to: localizedNumber))
         } catch {
             dataSource.text = text
-            setResult(text: text, result: .error(error))
+            let formatterError = error as? LocalizedNumberFormatterError
+            setResult(text: text, result: .error(formatterError ?? .unknown))
             throw error
         }
     }
