@@ -104,7 +104,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9941EBCA25D25A8C00C60BAD /* Helper */ = {
+		9941EBCA25D25A8C00C60BAD /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				996C1B0825D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift */,
@@ -112,7 +112,7 @@
 				9941EBCE25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift */,
 				9997543025E4F9F90077D13B /* LocalizedNumberFormatterResult.swift */,
 			);
-			path = Helper;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		996C1AC225D1297E002B5822 = {
@@ -143,7 +143,7 @@
 				999E37B325D26279007E66F5 /* Logger.swift */,
 				999E37C325D3A47C007E66F5 /* Locale.swift */,
 				999A4A5225E4C86600909FD3 /* Example */,
-				9941EBCA25D25A8C00C60BAD /* Helper */,
+				9941EBCA25D25A8C00C60BAD /* Model */,
 				996C1B0625D25723002B5822 /* View */,
 				996C1AD225D1297E002B5822 /* Assets.xcassets */,
 				996C1AD725D1297E002B5822 /* Info.plist */,

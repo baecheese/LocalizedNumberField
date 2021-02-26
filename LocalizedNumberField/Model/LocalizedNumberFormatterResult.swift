@@ -8,6 +8,7 @@
 import Foundation
 
 enum LocalizedNumberFormatterResult {
+    
     case none
     case success(from: String, to: String)
     case error(Error)
@@ -22,4 +23,20 @@ enum LocalizedNumberFormatterResult {
             return "\(error)"
         }
     }
+    
+    var index: Int {
+        switch self {
+        case .error(_):
+            return -1
+        case .none:
+            return 0
+        case .success(_, _):
+            return 1
+        }
+    }
+    
+    var isError: Bool {
+        return -1 == index
+    }
+    
 }
