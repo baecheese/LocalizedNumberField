@@ -16,6 +16,7 @@ struct SampleList: View {
             ForEach(modelData.fieldViewModels) {
                 SampleRow(dataSource: $0)
                     .environmentObject(modelData)
+                    .buttonStyle(PlainButtonStyle())
             }
         }
     }

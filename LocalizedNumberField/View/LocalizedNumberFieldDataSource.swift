@@ -20,4 +20,5 @@ protocol LocalizedNumberFieldDataSource {
     
     var result: LocalizedNumberFormatterResult { get set }
     
+    
 }

@@ -10,7 +10,9 @@ import SwiftUI
 struct SampleRow: View {
     
     var dataSource: LocalizedNumberFieldViewModel
-    @State private var isCommit: Bool = false
+    
+    /// textfield endEditing 일 때 상태 받는 곳
+    @State private var endEditing: Bool = false
     
     private var title: String {
         return "🌎 from \(dataSource.formatter.fromLocale.identifier) to \(dataSource.formatter.toLocale.identifier)"
@@ -22,14 +24,30 @@ struct SampleRow: View {
             Text(title)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .font(.system(size: 20.0, weight: .bold, design: .rounded))
-            LocalizedNumberFieldView(dataSource: dataSource, isCommit: $isCommit)
-            Text(" result: \(isCommit ? dataSource.result.description : "none")")
+            HStack {
+                Spacer()
+                LocalizedNumberFieldView(dataSource: dataSource, endEditing: $endEditing)
+                Button(
+                    action: {
+                        hideKeyboard()
+                    },
+                    label: {
+                        Text("Button")
+                            .font(.body)
+                            .fontWeight(.bold)
+                            .padding(5.0)
+                    }
+                )
+                .background(Color.yellow)
+                Spacer()
+            }
+            Text("   result: \(endEditing ? dataSource.result.description : "none")")
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .font(.system(size: 18.0, weight: .light, design: .rounded))
-                .lineLimit(0)
             Spacer()
         }
     }
+    
 }
 
 struct SampleRow_Previews: PreviewProvider {
