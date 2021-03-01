@@ -29,6 +29,7 @@
 		999E37CF25DA6A56007E66F5 /* TestNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999E37CE25DA6A56007E66F5 /* TestNumberFormatter.swift */; };
 		999E37D725DA6B37007E66F5 /* TestNumberFormatterLog.text in Sources */ = {isa = PBXBuildFile; fileRef = 999E37D625DA6B37007E66F5 /* TestNumberFormatterLog.text */; };
 		999E37DF25DFA58D007E66F5 /* TestNumberFormatter.md in Resources */ = {isa = PBXBuildFile; fileRef = 999E37DE25DFA58C007E66F5 /* TestNumberFormatter.md */; };
+		99ACEC0725EA20FF003DB264 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ACEC0625EA20FF003DB264 /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		999E37CE25DA6A56007E66F5 /* TestNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNumberFormatter.swift; sourceTree = "<group>"; };
 		999E37D625DA6B37007E66F5 /* TestNumberFormatterLog.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TestNumberFormatterLog.text; sourceTree = "<group>"; };
 		999E37DE25DFA58C007E66F5 /* TestNumberFormatter.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TestNumberFormatter.md; sourceTree = "<group>"; };
+		99ACEC0625EA20FF003DB264 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				999A4A6425E4D6D000909FD3 /* ContentView.swift */,
 				999E37B325D26279007E66F5 /* Logger.swift */,
 				999E37C325D3A47C007E66F5 /* Locale.swift */,
+				99ACEC0625EA20FF003DB264 /* View.swift */,
 				999A4A5225E4C86600909FD3 /* Example */,
 				9941EBCA25D25A8C00C60BAD /* Model */,
 				996C1B0625D25723002B5822 /* View */,
@@ -193,8 +196,8 @@
 		999A4A5225E4C86600909FD3 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				999A4A5325E4C87B00909FD3 /* SampleList.swift */,
 				999A4A5C25E4C8FA00909FD3 /* SampleFieldModel.swift */,
+				999A4A5325E4C87B00909FD3 /* SampleList.swift */,
 				999A4A7225E4DE5B00909FD3 /* SampleRow.swift */,
 			);
 			path = Example;
@@ -340,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99ACEC0725EA20FF003DB264 /* View.swift in Sources */,
 				996C1B0225D25349002B5822 /* LocalizedNumberFormatter.swift in Sources */,
 				996C1ACF25D1297E002B5822 /* LocalizedNumberFieldApp.swift in Sources */,
 				995E0BD125E39E5B002D39CE /* LocalizedNumberFieldView.swift in Sources */,
