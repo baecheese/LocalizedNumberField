@@ -5,6 +5,13 @@
 ![Swift-ui](https://img.shields.io/badge/UI-SwiftUI-9cf)
 ![MIT](https://img.shields.io/badge/licenses-MIT-blue)
 
+## 🌷 Blog Post
+> * 1편 - [[Localized Number] 1편: 글로벌 서비스 숫자 표기에 대한 고민](https://velog.io/@baecheese/Localized-Number-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%88%AB%EC%9E%90-%ED%91%9C%EA%B8%B0%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B3%A0%EB%AF%BC-%EB%8B%A4%EC%96%91%ED%95%9C-%EC%88%AB%EC%9E%90%EC%99%80-%EC%86%8C%EC%88%AB%EC%A0%90-%EC%B2%9C%EB%8B%A8%EC%9C%84-%ED%91%9C%EA%B8%B0-1)
+> * 2편 - [[Localized Number] 2편: NumberFormatter를 이용한 국가별 숫자 표기 변환](https://velog.io/@baecheese/Localized-Number-NumberFormatter%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B5%AD%EA%B0%80%EB%B3%84-%EC%88%AB%EC%9E%90-%ED%91%9C%EA%B8%B0-%EB%B3%80%ED%99%98-2)
+> * 3편 - [[Localized Number] 3편: NumberFormatter의 제약사항과 보완점](https://velog.io/@baecheese/Localized-Number-%EA%B5%AD%EA%B0%80%EC%96%B8%EC%96%B4-%EB%B3%84-%EC%88%AB%EC%9E%90-%EB%B3%80%ED%99%98-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0-3)
+> * 4편 - [[Localized Number] 4편: LocalizedNumberFormatter 구현하기](https://velog.io/@baecheese/Localized-Number-4%ED%8E%B8-LocalizedNumberFormatter-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
+> * 5편 - [[Localized Number] 5편: LocalizedNumberField 라이브러리 만들기](https://velog.io/@baecheese/Localized-Number-5%ED%8E%B8-LocalizedNumberField-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0)
+
 ## 🔍 Features
 ### Support
 * iOS 14.1
@@ -22,7 +29,7 @@
 * from locale, to locale 설정 -> textfield input -> Button -> to locale 숫자 포맷으로 변환
     - `en_US(English, United States)` 숫자에서 `ar(Arabic)` 숫자로 변경
 
-### Usage
+### Exmaple
 #### 1. LocalizedNumberFieldDataSource 준비
 ``` swift
 final class SampleFieldModel: ObservableObject {
@@ -257,10 +264,3 @@ The action to perform when the user begins editing text and after the user finis
 #### 참고
 * SwiftUI Tutorials
     - https://developer.apple.com/tutorials/swiftui/
-
-## 🌷 Blog Post
-> * 1편 - [[Localized Number] 1편: 글로벌 서비스 숫자 표기에 대한 고민](https://velog.io/@baecheese/Localized-Number-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%88%AB%EC%9E%90-%ED%91%9C%EA%B8%B0%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B3%A0%EB%AF%BC-%EB%8B%A4%EC%96%91%ED%95%9C-%EC%88%AB%EC%9E%90%EC%99%80-%EC%86%8C%EC%88%AB%EC%A0%90-%EC%B2%9C%EB%8B%A8%EC%9C%84-%ED%91%9C%EA%B8%B0-1)
-> * 2편 - [[Localized Number] 2편: NumberFormatter를 이용한 국가별 숫자 표기 변환](https://velog.io/@baecheese/Localized-Number-NumberFormatter%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B5%AD%EA%B0%80%EB%B3%84-%EC%88%AB%EC%9E%90-%ED%91%9C%EA%B8%B0-%EB%B3%80%ED%99%98-2)
-> * 3편 - [[Localized Number] 3편: NumberFormatter의 제약사항과 보완점](https://velog.io/@baecheese/Localized-Number-%EA%B5%AD%EA%B0%80%EC%96%B8%EC%96%B4-%EB%B3%84-%EC%88%AB%EC%9E%90-%EB%B3%80%ED%99%98-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0-3)
-> * 4편 - [[Localized Number] 4편: LocalizedNumberFormatter 구현하기](https://velog.io/@baecheese/Localized-Number-4%ED%8E%B8-LocalizedNumberFormatter-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
-> * 5편 - [[Localized Number] 5편: LocalizedNumberField 라이브러리 만들기](https://velog.io/@baecheese/Localized-Number-5%ED%8E%B8-LocalizedNumberField-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0)
