@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		99307D3D25E3A95700E482AA /* LocalizedNumberFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99307D3C25E3A95700E482AA /* LocalizedNumberFieldDelegate.swift */; };
 		9941EBCF25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9941EBCE25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift */; };
 		995E0BCF25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E0BCC25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift */; };
 		995E0BD025E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E0BCD25E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift */; };
@@ -50,7 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		99307D3C25E3A95700E482AA /* LocalizedNumberFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFieldDelegate.swift; sourceTree = "<group>"; };
 		9941EBCE25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFormatterError.swift; sourceTree = "<group>"; };
 		995E0BCC25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFieldViewModel.swift; sourceTree = "<group>"; };
 		995E0BCD25E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedNumberFieldDataSource.swift; sourceTree = "<group>"; };
@@ -187,7 +185,6 @@
 			children = (
 				995E0BCE25E39E5B002D39CE /* LocalizedNumberFieldView.swift */,
 				995E0BCD25E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift */,
-				99307D3C25E3A95700E482AA /* LocalizedNumberFieldDelegate.swift */,
 				995E0BCC25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift */,
 			);
 			path = View;
@@ -353,7 +350,6 @@
 				9941EBCF25D25ACD00C60BAD /* LocalizedNumberFormatterError.swift in Sources */,
 				995E0BD025E39E5B002D39CE /* LocalizedNumberFieldDataSource.swift in Sources */,
 				996C1B0925D2574C002B5822 /* LocalizedNumberFormatterDataSource.swift in Sources */,
-				99307D3D25E3A95700E482AA /* LocalizedNumberFieldDelegate.swift in Sources */,
 				999A4A6525E4D6D000909FD3 /* ContentView.swift in Sources */,
 				995E0BCF25E39E5B002D39CE /* LocalizedNumberFieldViewModel.swift in Sources */,
 				999A4A7325E4DE5B00909FD3 /* SampleRow.swift in Sources */,
@@ -519,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LocalizedNumberField/Preview Content\"";
 				DEVELOPMENT_TEAM = 3Z5E8777P2;
@@ -532,6 +529,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = baecheese.com.localizednumberfield;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -542,6 +540,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LocalizedNumberField/Preview Content\"";
 				DEVELOPMENT_TEAM = 3Z5E8777P2;
@@ -555,6 +554,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = baecheese.com.localizednumberfield;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -566,7 +566,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UT834J75J3;
+				DEVELOPMENT_TEAM = 3Z5E8777P2;
 				INFOPLIST_FILE = LocalizedNumberFieldTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -588,7 +588,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UT834J75J3;
+				DEVELOPMENT_TEAM = 3Z5E8777P2;
 				INFOPLIST_FILE = LocalizedNumberFieldTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -609,7 +609,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UT834J75J3;
+				DEVELOPMENT_TEAM = 3Z5E8777P2;
 				INFOPLIST_FILE = LocalizedNumberFieldUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -629,7 +629,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UT834J75J3;
+				DEVELOPMENT_TEAM = 3Z5E8777P2;
 				INFOPLIST_FILE = LocalizedNumberFieldUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
