@@ -5,6 +5,10 @@
 ![Swift-ui](https://img.shields.io/badge/UI-SwiftUI-9cf)
 ![MIT](https://img.shields.io/badge/licenses-MIT-blue)
 
+글로벌 서비스를 개발하며, 국가와 언어 별로 상이한 숫자 표기 체계를 경험했습니다. 
+유저의 다양한 입력 환경에 대응할 수 있는 구현 방식이 무엇인지 고민하고,
+이에 대해 정리한 공간입니다.
+
 ## 🌷 Blog Post
 > * 1편 - [[Localized Number] 1편: 글로벌 서비스 숫자 표기에 대한 고민](https://velog.io/@baecheese/Localized-Number-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%88%AB%EC%9E%90-%ED%91%9C%EA%B8%B0%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B3%A0%EB%AF%BC-%EB%8B%A4%EC%96%91%ED%95%9C-%EC%88%AB%EC%9E%90%EC%99%80-%EC%86%8C%EC%88%AB%EC%A0%90-%EC%B2%9C%EB%8B%A8%EC%9C%84-%ED%91%9C%EA%B8%B0-1)
 > * 2편 - [[Localized Number] 2편: NumberFormatter를 이용한 국가별 숫자 표기 변환](https://velog.io/@baecheese/Localized-Number-NumberFormatter%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B5%AD%EA%B0%80%EB%B3%84-%EC%88%AB%EC%9E%90-%ED%91%9C%EA%B8%B0-%EB%B3%80%ED%99%98-2)
